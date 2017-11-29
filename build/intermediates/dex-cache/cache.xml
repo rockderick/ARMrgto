@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_ce764f878a7e2b10625c6266f61a8bbe2154ae47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\libs\EasyAR.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="76897f1f230cf857ea84d8b64deb73803d7839a6">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\EasyAR_1128bea679a183fd2428050f12bfa59a008fb134.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha7\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="541a2ad68dc68aa49795821f8280b7624e6a0c9b">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-alpha7_fe75bf5ae4b4725f08ee29dbb9d25b4cf2375991.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha7\constraint-layout-solver-1.0.0-alpha7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="439eeb5ffd54cbd18db0a6aea471e8356f19fc36">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-alpha7_f3d8ca561d4de9f5cfb25313b29f6cc34e2ef770.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_c0ae8e7b8d8035fc4bbe81cf09a2868f9ee7ca23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_36f4845323f3a00d7a9db9ed6815cbdcd7219d00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_8c1c0a76006d4d6526decb153104d6f4462b3ab9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_674929a1a5586b93b14c059c662b3cecc498df53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\rj148m\Downloads\MarugutoARVideo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_76048d24d56f4cfcdae696dd24394f7b2ab6c967.jar" />
+    </item>
+
+</items>

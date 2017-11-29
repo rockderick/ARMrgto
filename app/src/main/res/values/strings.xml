@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Marugoto AR</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="menu_about">Sobre MarugotoAR</string>
+    <string name="menu_howto">Como Usar</string>
+    <string name="button_start_txt">Comenzar</string>
+    <string name="title_activity_hw_to">HwToActivity</string>
+
+
+    <string name="instruction_note_1">1. Proyectar en la camara la imagen correspondiente al dialogo de conversación del libro Marugoto.</string>
+    <string name="instruction_note_2">2. Esperar que el video interactivo se reproduzca.</string>
+    <string name="instruction_note_3">3. Puede reproducir el video de nuevo y practicar de nuevo colocando la camara sobre la imagen.</string>
+
+    <string name="title_about">MarugotoAR 0.1</string>
+    <string name="developer_name"> © 2017 Rodrigo Jurado Barrera</string>
+
+    MARUGOTO: Japanese Language and Culture", the official coursebook of the Japan Foundation, which complies to the JF Standard for Japanese-Language Education.
+    <string name="about_str">Marugoto AR es una aplicación de Realidad Aumentada que facilita el aprendizaje del idioma japonés
+    usando el libro de texto MARUGOTO: Japanase Language and Culture, el curso oficial de la Japan Foundation, el cual utiliza el
+    estandar de Educación del idioma Japonés (JF Standard).</string>
+
+    <string name="about_copyright">Los videos presentados en esta aplicación son propiedad de The Japan Foundation © Copyright. All Rights Reserved</string>
+
+
+
+</resources>
