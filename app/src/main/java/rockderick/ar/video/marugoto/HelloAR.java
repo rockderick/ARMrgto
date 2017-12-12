@@ -271,8 +271,10 @@ public class HelloAR
                             }
                             else if (target_name.equals("schedule") && video_renderers.get(1).texId() != 0) {
                                 video = new ARVideo();
-                                video.openVideoFile("schedule_party.mp4", video_renderers.get(0).texId());
-                                current_video_renderer = video_renderers.get(0);
+                                //video.openVideoFile("schedule_party.mp4", video_renderers.get(0).texId());
+                                //current_video_renderer = video_renderers.get(0);
+                                video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                                current_video_renderer = video_renderers.get(2);
                             }
                             /*} else if (target_name.equals("namecard") && video_renderers.get(1).texId() != 0) {
                                 video = new ARVideo();
