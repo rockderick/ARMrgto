@@ -10,6 +10,10 @@
       "name" : "schedule"
     },
     {
+      "image" : "schedule00.jpg",
+      "name" : "test"
+    },  
+    {
       "image" : "idback.jpg",
       "name" : "idback",
       "size" : [8.56, 5.4],
