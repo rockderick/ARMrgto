@@ -181,7 +181,7 @@ public class HelloAR
         }
         videobg_renderer = new Renderer();
         video_renderers = new ArrayList<VideoRenderer>();
-        for (int k = 0; k < 2; k += 1) {
+        for (int k = 0; k < 3; k += 1) {
             VideoRenderer video_renderer = new VideoRenderer();
             video_renderer.init();
             video_renderers.add(video_renderer);
@@ -282,7 +282,8 @@ public class HelloAR
                                 current_video_renderer = video_renderers.get(1);
                             }*/ else if (target_name.equals("test") && video_renderers.get(2).texId() != 0) {
                                 video = new ARVideo();
-                                video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                                video.openStreamingVideo("http://a2-2.marugotoweb.jp/src/video/1/video+akiko+james+roy.mp4", video_renderers.get(2).texId());
+                                //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
                                 current_video_renderer = video_renderers.get(2);
                             }
                         }

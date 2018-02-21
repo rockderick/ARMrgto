@@ -1,4 +1,4 @@
-#Wed Feb 21 12:58:43 CST 2018
+#Wed Feb 21 17:11:37 CST 2018
 base.0=C\:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
