@@ -2088,6 +2088,8 @@ containing a value of this type.
         public static final int Animation_AppCompat_Dialog=0x7f0a0088;
         public static final int Animation_AppCompat_DropDownUp=0x7f0a0089;
         public static final int AppNormalTheme=0x7f0a008a;
+        /**  Customize your theme here. 
+         */
         public static final int AppTheme=0x7f0a008b;
         public static final int AppThemeMain=0x7f0a008c;
         public static final int Base_AlertDialog_AppCompat=0x7f0a008d;

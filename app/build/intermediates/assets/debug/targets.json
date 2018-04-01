@@ -12,7 +12,15 @@
     {
       "image" : "schedule00.jpg",
       "name" : "test"
-    },  
+    },
+    {
+      "image" : "taberu.png",
+      "name" : "marugoto_a2"
+    },
+    {
+      "image" : "furoshiki.jpg",
+      "name" : "furoshiki"
+    },
     {
       "image" : "idback.jpg",
       "name" : "idback",

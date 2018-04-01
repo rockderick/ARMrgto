@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/home/rockderick/AndroidStudioProjects/ARMrgto/C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "/home/rockderick/AndroidStudioProjects/ARMrgto/C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/home/rockderick/AndroidStudioProjects/ARMrgto/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/rockderick/AndroidStudioProjects/ARMrgto/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

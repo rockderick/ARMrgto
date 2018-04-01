@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
-        "source": "C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\src\\main\\res\\menu\\menu_main.xml"
+        "merged": "/home/rockderick/AndroidStudioProjects/ARMrgto/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/home/rockderick/AndroidStudioProjects/ARMrgto/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/rockderick/AndroidStudioProjects/ARMrgto/C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "/home/rockderick/AndroidStudioProjects/ARMrgto/C:\\Users\\rj148m\\Downloads\\MarugutoARVideo\\app\\src\\main\\res\\menu\\menu_main.xml"
     }
 ]
