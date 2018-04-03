@@ -22,6 +22,10 @@
       "name" : "furoshiki"
     },
     {
+      "image" : "shio.png",
+      "name" : "png"
+    },
+    {
       "image" : "idback.jpg",
       "name" : "idback",
       "size" : [8.56, 5.4],

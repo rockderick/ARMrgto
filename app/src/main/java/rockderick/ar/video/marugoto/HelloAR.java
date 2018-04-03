@@ -181,7 +181,7 @@ public class HelloAR
         }
         videobg_renderer = new Renderer();
         video_renderers = new ArrayList<VideoRenderer>();
-        for (int k = 0; k < 5; k += 1) {
+        for (int k = 0; k < 6; k += 1) {
             VideoRenderer video_renderer = new VideoRenderer();
             video_renderer.init();
             video_renderers.add(video_renderer);
@@ -299,6 +299,13 @@ public class HelloAR
                                 video = new ARVideo();
                                 video.openVideoFile("furoshiki.mp4", video_renderers.get(4).texId());
                                 current_video_renderer = video_renderers.get(4);
+
+                            }
+                            else if (target_name.equals("marugoto_a2") && video_renderers.get(5).texId() != 0) {
+                                video = new ARVideo();
+                                video.openStreamingVideo("https://media.kanjialive.com/kanji_animations/kanji_mp4/en-shio_00.mp4", video_renderers.get(5).texId());
+                                //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                                current_video_renderer = video_renderers.get(5);
 
                             }
 

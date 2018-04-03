@@ -17,7 +17,6 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@style/AppThemeMain" >
         <activity
             android:name="rockderick.ar.video.marugoto.CameraMainActivity"
