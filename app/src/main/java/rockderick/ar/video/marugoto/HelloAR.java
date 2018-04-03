@@ -301,7 +301,7 @@ public class HelloAR
                                 current_video_renderer = video_renderers.get(4);
 
                             }
-                            else if (target_name.equals("marugoto_a2") && video_renderers.get(5).texId() != 0) {
+                            else if (target_name.equals("shio") && video_renderers.get(5).texId() != 0) {
                                 video = new ARVideo();
                                 video.openStreamingVideo("https://media.kanjialive.com/kanji_animations/kanji_mp4/en-shio_00.mp4", video_renderers.get(5).texId());
                                 //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
