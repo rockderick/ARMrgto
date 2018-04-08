@@ -22,8 +22,12 @@
       "name" : "furoshiki"
     },
     {
-      "image" : "shio.png",
+      "image" : "shio2.png",
       "name" : "shio"
+    },
+    {
+      "image" : "sen.png",
+      "name" : "sen"
     },
     {
       "image" : "idback.jpg",
