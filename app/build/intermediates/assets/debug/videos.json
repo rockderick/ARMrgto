@@ -1,0 +1,29 @@
+{
+  "videos" :
+  [
+    {
+      "video" : "a2_2",
+      "url" : "http://a2-2.marugotoweb.jp/src/video/1/video+akiko+james+roy.mp4"
+    },
+    {
+      "video" : "a2_1",
+      "url" : "http://a2-2.marugotoweb.jp/src/video/2/video+akiko+james+roy.mp4"
+    },
+    {
+      "video" : "a22_003",
+      "url" : "test"
+    },
+    {
+      "video" : "a22_004",
+      "url" : "marugoto_a2"
+    },
+    {
+      "video" : "a22_005",
+      "url" : "furoshiki"
+    },
+    {
+      "video" : "a2_2",
+      "url" : "shiodsdasd"
+    }
+  ]
+}

@@ -8,12 +8,20 @@
 
 package rockderick.ar.video.marugoto;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.opengl.GLES20;
 import android.util.Log;
+
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import cn.easyar.CameraCalibration;
 import cn.easyar.CameraDevice;
@@ -31,6 +39,9 @@ import cn.easyar.TargetInstance;
 import cn.easyar.TargetStatus;
 import cn.easyar.Vec2I;
 import cn.easyar.Vec4I;
+import rockderick.ar.video.marugoto.utils.Utils;
+
+import static  rockderick.ar.video.marugoto.utils.Utils.containsName;
 
 public class HelloAR
 {
@@ -51,10 +62,14 @@ public class HelloAR
 
     MediaPlayer mp;
 
+    private  List<JSONVideo> videoData;
+
+
     public HelloAR(Context context)
     {
         this.context = context;
         trackers = new ArrayList<ImageTracker>();
+        videoData =  getVideoParamsFromJson();
 
 
     }
@@ -181,7 +196,7 @@ public class HelloAR
         }
         videobg_renderer = new Renderer();
         video_renderers = new ArrayList<VideoRenderer>();
-        for (int k = 0; k < 7; k += 1) {
+        for (int k = 0; k < 9; k += 1) {
             VideoRenderer video_renderer = new VideoRenderer();
             video_renderer.init();
             video_renderers.add(video_renderer);
@@ -260,7 +275,21 @@ public class HelloAR
                     if (tracked_target == 0) {
                         if (video == null && video_renderers.size() > 0) {
                             String target_name = target.name();
-                            if (target_name.equals("argame") && video_renderers.get(0).texId() != 0) {
+                            Log.i("HelloAR", "target name: "+target.name()+" target meta: "+target.meta()+" target uid: "+target.uid());
+
+
+                            Log.i("HelloAR",target_name +" contains name: "+ Utils.containsName(videoData,target_name));
+
+                            JSONVideo jsonVideo = Utils.get(videoData,target_name);
+                            Log.i("HelloAR"," Json video: "+ jsonVideo.getVideoName() + "url :"+ jsonVideo.getUrl());
+
+                            video = new ARVideo();
+                            video.openStreamingVideo(jsonVideo.getUrl(), video_renderers.get(0).texId());
+                            //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                            current_video_renderer = video_renderers.get(0);
+
+
+                            /*if (target_name.equals("argame") && video_renderers.get(0).texId() != 0) {
                                 video = new ARVideo();
                                 video.openVideoFile("output.mp4", video_renderers.get(0).texId());
                                 //mp = MediaPlayer.create(context, R.raw.asagohan_wo_tabemasu);
@@ -280,7 +309,8 @@ public class HelloAR
                                 video = new ARVideo();
                                 video.openTransparentVideoFile("transparentvideo.mp4", video_renderers.get(1).texId());
                                 current_video_renderer = video_renderers.get(1);
-                            }*/ else if (target_name.equals("test") && video_renderers.get(2).texId() != 0) {
+                            }*/
+                            /*else if (target_name.equals("test") && video_renderers.get(2).texId() != 0) {
                                 video = new ARVideo();
                                 video.openStreamingVideo("http://a2-2.marugotoweb.jp/src/video/1/video+akiko+roy.mp4", video_renderers.get(2).texId());
                                 //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
@@ -316,6 +346,30 @@ public class HelloAR
                                 current_video_renderer = video_renderers.get(6);
 
                             }
+                            else if (target_name.equals("a2_1") && video_renderers.get(7).texId() != 0) {
+                                video = new ARVideo();
+                                video.openStreamingVideo("http://a2.marugotoweb.jp/en/challenge_drama/example/data/video/topic01.mp4#t=0,126", video_renderers.get(7).texId());
+                                //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                                current_video_renderer = video_renderers.get(7);
+
+                            }
+                            /*else if (target_name.equals("a2_2") && video_renderers.get(8).texId() != 0) {
+                                video = new ARVideo();
+                                video.openStreamingVideo("http://a2-2.marugotoweb.jp/src/video/1/video+akiko+roy.mp4", video_renderers.get(8).texId());
+                                //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                                current_video_renderer = video_renderers.get(8);
+
+                            }*/
+
+                            /*else if (target_name.equals("a2_2") && video_renderers.get(8).texId() != 0) {
+                                video = new ARVideo();
+                                video.openStreamingVideo("http://a2-2.marugotoweb.jp/src/video/1/video+akiko+roy.mp4", video_renderers.get(8).texId());
+                                //video.openStreamingVideo("https://sightpvideo-cdn.sightp.com/sdkvideo/EasyARSDKShow201520.mp4", video_renderers.get(2).texId());
+                                current_video_renderer = video_renderers.get(8);
+
+                            }*/
+
+
 
                         }
                         if (video != null) {
@@ -350,4 +404,50 @@ public class HelloAR
             frame.dispose();
         }
     }
+
+    private String loadJSONFromAsset(String jsonResource) {
+        String json = null;
+        try {
+            InputStream is = context.getAssets().open(jsonResource);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+    }
+
+
+    private List<JSONVideo> getVideoParamsFromJson(){
+
+        String url="";
+        String name="";
+        List<JSONVideo> videoData = new ArrayList<>();
+        try {
+            JSONObject jsonObj = new JSONObject(loadJSONFromAsset("videos.json"));
+            JSONArray videos = jsonObj.getJSONArray("videos");
+
+            for (int i=0; i<videos.length();i++){
+                JSONObject video = videos.getJSONObject(i);
+                name = video.getString("video");
+                url = video.getString("url");
+
+                JSONVideo jsonVideo = new JSONVideo();
+                jsonVideo.setVideoName(name);
+                jsonVideo.setUrl(url);
+
+                videoData.add(jsonVideo);
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return videoData;
+    }
+
 }

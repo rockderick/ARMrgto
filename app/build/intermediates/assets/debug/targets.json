@@ -30,6 +30,14 @@
       "name" : "sen"
     },
     {
+      "image" : "a2_1.jpg",
+      "name" : "a2_1"
+    },
+    {
+      "image" : "a2_2.jpg",
+      "name" : "a2_2"
+    },
+    {
       "image" : "idback.jpg",
       "name" : "idback",
       "size" : [8.56, 5.4],

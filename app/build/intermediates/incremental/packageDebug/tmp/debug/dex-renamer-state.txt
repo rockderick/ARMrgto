@@ -1,0 +1,7 @@
+#Fri Jul 13 21:30:55 CDT 2018
+base.0=C\:\\Users\\jurad\\Documents\\Programming\\Android\\ARMrgto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\27
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\jurad\\Documents\\Programming\\Android\\ARMrgto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\28
